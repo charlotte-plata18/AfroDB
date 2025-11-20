@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../img/imagen_1.png') no-repeat center center/cover;
+}
+
+/* Contenedor de enlaces superiores */
+.top-links {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+/* Botón de iniciar sesión (estilo base) */
+.login-btn {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+/* Variante secundaria si se necesita estilo distinto */
+
+/* Caja del formulario */
+.form-container {
+    width: 360px;  /* MÁS PEQUEÑA */
+    padding: 20px;
+    background: #f7e9e3;
+    border-radius: 18px;
+    margin: 75px auto;
+    box-shadow: 0 6px 20px rgba(216, 12, 12, 0.25);
+    position: relative;
+    text-align: center;
+}
+
+/* Logo */
+.logo {
+     width: 100px;
+    height: 100px;
+    background: #D9B28C;
+    border-radius: 50%;
+    margin: -80px auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family:'Allura', cursive;
+    font-weight: bold;
+    color: #5a3d28;
+}
+
+/* Inputs */
+.input-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 2px solid #b9a394;
+    border-radius: 8px;
+    margin: 7px 0;
+    padding: 4px;
+}
+
+
+.input-box .icon {
+    font-size: 17px;
+    margin-right: 10px;
+    color: #6b5b4d;
+}
+
+.input-box input,
+.input-box select {
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 8px;
+    font-size: 13px;
+    color: #333333ce;
+}
+
+/* Botón registrar */
+.btn-register {
+    width: 100%;
+    padding: 12px;
+    background: #f6d9d0;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    font-weight: bold;
+}

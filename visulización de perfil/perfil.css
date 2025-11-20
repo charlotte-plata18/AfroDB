@@ -1,0 +1,128 @@
+/* ==== ESTILO GENERAL ==== */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #e4be99;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    position: relative;
+}
+
+/* ==== BOTÓN ATRÁS ==== */
+.btn-back {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* ==== BOTÓN CERRAR ==== */
+.btn-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ==== TARJETA PRINCIPAL ==== */
+.perfil-card {
+    background: #b28963;
+    width: 85%;
+    max-width: 900px;
+    padding: 30px;
+    border-radius: 25px;
+    margin-top: 60px;
+    color: black;
+}
+
+/* ==== HEADER DEL PERFIL ==== */
+.perfil-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.avatar {
+    width: 85px;
+    height: 85px;
+    background: #666;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    margin-right: 20px;
+}
+
+.nombre {
+    font-size: 18px;
+    margin: 0;
+}
+
+.descripcion {
+    font-size: 14px;
+    margin: 3px 0 0 0;
+}
+
+/* ==== TÍTULO ==== */
+.titulo-trabajo {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* ==== GRID DE TRABAJOS ==== */
+.trabajos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* TARJETA DE TRABAJO */
+.trabajo-item {
+    text-align: center;
+    font-size: 13px;
+}
+
+/* IMAGEN REAL DE TRABAJO */
+.trabajo-img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 18px;
+    background: white;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 700px) {
+    .trabajos-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .trabajos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .perfil-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .avatar {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/icono_DB.png">
+    <title>Registro</title>
+
+    <!-- Íconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../registro/registro.css">
+</head>
+<body>
+
+    <!-- Botones en la esquina superior derecha -->
+    <div class="top-links">
+        <a href="../inicio de sesión/index.html" class="login-btn">INICIAR SESIÓN</a>
+        <a href="../parter principal/Salon Homepage.html" class="login-btn secondary">PÁGINA PRINCIPAL</a>
+        
+    </div>
+    <!-- Caja de registro -->
+    <div class="form-container">
+
+        <div class="logo">DB</div>
+
+        <form>
+
+            <div class="input-box">
+                <i class="fa-solid fa-id-card icon"></i>
+                <input type="text" placeholder="NÚMERO DE DOCUMENTO">
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-file-lines icon"></i>
+                <select>
+                    <option disabled selected>TIPO DE DOCUMENTO</option>
+                    <option>Cédula</option>
+                    <option>Tarjeta de identidad</option>
+                    <option>Cédula extranjera</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-user icon"></i>
+                <input type="text" placeholder="NOMBRE Y APELLIDOS">
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-location-dot icon"></i>
+                <input type="text" placeholder="DIRECCIÓN">
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-phone icon"></i>
+                <input type="text" placeholder="TELÉFONO">
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-envelope icon"></i>
+                <input type="email" placeholder="CORREO ELECTRÓNICO">
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-lock icon"></i>
+                <input type="password" placeholder="CLAVE">
+            </div>
+
+            <button class="btn-register">REGISTRARME!</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © Todos los derechos reservados a AfroDB 2025
+    </footer>
+
+</body>
+</html>

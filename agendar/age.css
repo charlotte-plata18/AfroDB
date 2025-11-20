@@ -1,0 +1,142 @@
+/* ====== ESTILOS GENERALES ====== */
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #c9a37a;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ====== FORMAS DEL FONDO (clip-path) ====== */
+
+body::before,
+body::after {
+    content: "";
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background: #b78960;
+    z-index: -1;
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 60%;
+}
+
+body::before {
+    top: -180px;
+    left: -200px;
+}
+
+body::after {
+    bottom: -200px;
+    right: -250px;
+    background: #b78960 ;
+}
+
+
+/* ====== BOTÓN VER MIS CITAS ====== */
+.btn-citas {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #d6b08a;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color:#ffffff;
+}
+
+/* ====== TARJETA DEL FORMULARIO ====== */
+
+.card {
+    width: 360px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    position: relative;
+    text-align: center;
+}
+
+/* Logo circular "DB" */
+.logo-circle {
+    width: 66px;
+    height: 66px;
+    background: #d8b99a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Allura', cursive;
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 30px);
+    color: #5a3d28;
+}
+
+/* ====== CAMPOS DE ENTRADA ====== */
+
+.input-box {
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    border: 1px solid #b9a394;
+    border-radius: 6px;
+    padding: 10px;
+    background: white;
+    position: relative;
+}
+
+
+.input-box input,
+.input-box select {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+    color: #333333ce;
+}
+
+.input-box i {
+    font-size: 17px;
+    margin-right: 10px;
+    color: #6b5b4d;
+}
+
+.arrow {
+    position: absolute;
+    right: 12px;
+    pointer-events: none;
+}
+
+/* ====== BOTÓN AGENDAR ====== */
+
+.btn-agendar {
+    width: 100%;
+    margin-top: 18px;
+    background: #d6b08a;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* ====== FOOTER ====== */
+
+footer {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 20px;
+    color: #2b1b0f;
+}
