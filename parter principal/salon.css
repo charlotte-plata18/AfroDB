@@ -163,3 +163,11 @@
       padding: 20px;
       text-align: center;
     }
+
+header .logo img {
+  width: 80px;          /* tamaño pequeño */
+  height: 80px;         /* cuadrado */
+  border-radius: 3000%;   /* lo hace circular */
+  object-fit: cover;    /* asegura que la imagen no se deforme */
+  display: block;
+}
