@@ -1,70 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../img/icono_DB.png">
-    <title>Agendar Cita</title>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="age.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agendar cita</title>
+  <link rel="stylesheet" href="../agendar/age.css"/>
 </head>
 <body>
 
-    <button class="btn-citas">VER MIS CITAS</button>
+<header>
+  <h2>AfroDB</h2>
+  <nav>
+    <a href="../parter principal/Salon Homepage.html">Inicio</a>
+    <a href="#">Servicios</a>
+    <a href="../compras/productos.html">Productos</a>
+    <a href="../registro/registro.html">Registro</a>
+  </nav>
+</header>
 
-    <div class="card">
+<div class="agendar-container">
 
-        <div class="logo-circle">DB</div>
+  <h2 class="titulo">Agendar una cita</h2>
 
-        <div class="input-box">
-            <i class="fa-solid fa-id-card icon"></i>
-            <input type="text" placeholder="NUMERO DE DOCUMENTO">
-        </div>
+  <div class="calendar-section">
+    <h3>1. Selecciona la fecha</h3>
+    <input type="date" class="calendar-input">
+  </div>
 
-        <div class="input-box">
-            <i class="fa-solid fa-file-lines icon"></i>
-            <select>
-                <option disabled selected>TIPO DE DOCUMENTO</option>
-                <option>CC</option>
-                <option>TI</option>
-                <option>CE</option>
-            </select>
-        
-        </div>
+  <div class="profesionales-section">
+    <h3>2. Selecciona el profesional</h3>
 
-        <div class="input-box">
-            <i class="fa-solid fa-user icon"></i>
-            <input type="text" placeholder="NOMBRE Y APELLIDOS">
-        </div>
-
-        <div class="input-box">
-            <i class="fa-solid fa-phone icon"></i>
-            <input type="text" placeholder="TELÉFONO">
-        </div>
-
-        <div class="input-box">
-            <i class="fa-solid fa-envelope icon"></i>
-            <input type="email" placeholder="CORREO ELECTRONICO">
-        </div>
-
-        <div class="input-box">
-            <i class="fa-solid fa-calendar icon"></i>
-            <input type="datetime-local">
-        </div>
-
-        <button class="btn-agendar">AGENDAR MI CITA!</button>
+    <div class="profesional-card">
+      <img src="img/profesional1.png" alt="">
+      <div>
+        <h4>María Gómez</h4>
+        <p>Especialista en cabello afro</p>
+      </div>
+      <input type="radio" name="pro" />
     </div>
 
-    <footer>
-        <i class="fa-regular fa-copyright"></i>
-        Todos los derechos reservados a AfroDB  
-        <br>2025
-    </footer>
+    <div class="profesional-card">
+      <img src="img/profesional2.png" alt="">
+      <div>
+        <h4>Laura Ríos</h4>
+        <p>Coloración y estilizado</p>
+      </div>
+      <input type="radio" name="pro" />
+    </div>
+
+    <div class="profesional-card">
+      <img src="img/profesional3.png" alt="">
+      <div>
+        <h4>Ana Torres</h4>
+        <p>Tratamientos capilares</p>
+      </div>
+      <input type="radio" name="pro" />
+    </div>
+
+    <div class="profesional-card">
+      <img src="img/profesional4.png" alt="">
+      <div>
+        <h4>Carmen Díaz</h4>
+        <p>Peinados y recogidos</p>
+      </div>
+      <input type="radio" name="pro" />
+    </div>
+
+    <div class="profesional-card">
+      <img src="img/profesional5.png" alt="">
+      <div>
+        <h4>Sofía Martínez</h4>
+        <p>Manicurista</p>
+      </div>
+      <input type="radio" name="pro" />
+
+    </div>
+    </div>
+    
+  <!-- Botón reservar -->
+  <button class="btn-reservar">Reservar cita</button>
+
+</div>
+
+<footer>
+  <p>© 2025   Todos los derechos reservados – CDLN Sistemas – Código Digital Logístico y Novedoso</p>
+</footer>
 
 </body>
 </html>
