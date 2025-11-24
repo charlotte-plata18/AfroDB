@@ -1,0 +1,197 @@
+/* ======== ESTILO GENERAL ======== */
+
+body {
+  font-family: poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4efe9; /* tono tierra suave */
+  color: #4a3f35;
+}
+
+/* ======== HEADER ======== */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgb(209, 174, 143);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  color: #ffffff;
+}
+
+header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+/* --- NAVBAR NUEVO LADO DERECHO --- */
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* BUSCADOR */
+.search-box input {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #d9c2a5;
+  outline: none;
+  background: #fff;
+  width: 180px;
+  transition: 0.2s;
+}
+
+.search-box input:focus {
+  width: 230px;
+  border-color: #a57d63;
+}
+
+/* ICONO DE CARRITO */
+.cart-btn {
+  background: #a78c7a;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background 0.2s ease;
+}
+
+.cart-btn:hover {
+  background: #8d6b55;
+}
+
+
+/* ======== CONTENEDOR PRINCIPAL ======== */
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* ======== SECCIONES: PRODUCTOS + CARRITO ======== */
+
+.products,
+.cart {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+h2 {
+  margin-top: 0;
+  color: #6e5846;
+}
+
+/* ======== PRODUCTOS ANTIGUOS ======== */
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.product button {
+  background: #a57d63;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background: #8d6b55;
+}
+
+/* ======== NUEVO GRID DE TARJETAS ======== */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  min-height: 330px; /* Aumenta el tamaño */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* imagen más grande */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  color: #6e5846;
+}
+
+.card p {
+  margin: 3px 0;
+  color: #4a3f35;
+}
+
+.card button {
+  background: #a57d63;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.card button:hover {
+  background: #8d6b55;
+}
+
+/* ======== CARRITO ======== */
+
+.cart-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.total {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ======== FOOTER ======== */
+
+footer {
+  background: rgb(209, 174, 143);
+  color:#FFFFFF;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}
