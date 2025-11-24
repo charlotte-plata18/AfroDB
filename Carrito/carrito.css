@@ -1,0 +1,153 @@
+/* ---------- GENERAL ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4eee3; /* Beige suave */
+  color: #4a3d32; /* Café suave */
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background-color: rgb(209, 174, 143); /* Café tierra */
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+header h2 {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f9f4ef;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #d9c5b2; /* Beige claro */
+}
+
+/* ---------- CONTENEDOR DEL CARRITO ---------- */
+.cart-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 10px;
+}
+
+/* ---------- TÍTULO ---------- */
+.cart-title {
+  font-size: 26px;
+  margin-bottom: 25px;
+  text-align: left;  /* Se alineó a la izquierda */
+  color: #5a4636;
+}
+
+/* ---------- CARD DEL PRODUCTO (HORIZONTAL + A LA IZQUIERDA) ---------- */
+.cart-item-card {
+  display: flex;
+  align-items: center;
+  background: #fff8ef; /* Fondo crema */
+  padding: 15px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  border: 1px solid #e3d6c7;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.12);
+  gap: 20px;
+}
+
+.cart-item-card img {
+  width: 110px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #d7c4af;
+}
+
+/* ---------- INFO DEL PRODUCTO ---------- */
+.cart-info h3 {
+  margin: 0;
+  font-size: 19px;
+  color: #4a3d32;
+}
+
+.cart-info p {
+  margin: 5px 0;
+  font-size: 15px;
+  color: #5d4a3a;
+}
+
+/* ---------- BOTONES ---------- */
+.cart-actions {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-edit,
+.btn-delete,
+.btn-buy {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* EDITAR (tierra suave) */
+.btn-edit {
+  background: #d8c1a7;
+  color: #4a3d32;
+}
+
+.btn-edit:hover {
+  background: #c8ad92;
+}
+
+/* ELIMINAR (rojo tierra) */
+.btn-delete {
+  background: #c97a63;
+  color: white;
+}
+
+.btn-delete:hover {
+  background: #b5654f;
+}
+
+/* COMPRAR (café oscuro) */
+.btn-buy {
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+  background:rgb(209, 174, 143);
+  color: white;
+    font-size: 25px;
+
+}
+
+.btn-buy:hover {
+  background: #9a7962;
+}
+
+/* ---------- TOTAL ---------- */
+.total {
+  text-align: left;
+  font-size: 22px;
+  font-weight: bold;
+  color: #4a3d32;
+  margin-top: 20px;
+  
+}
+
+footer {
+  background: rgb(209, 174, 143);
+  color:#FFFFFF;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}
