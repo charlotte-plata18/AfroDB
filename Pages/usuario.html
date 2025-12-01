@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="../img/AfroDB.png"/>
-  <title>Profesional - Editar perfil</title>
-  <link rel="stylesheet" href="../style/perfil.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>Administrador - Usuarios</title>
+  <link rel="stylesheet" href="../style/usuarios.css" />
 </head>
 <body>
 
@@ -18,8 +18,8 @@
     </a>
     <nav>
       <a href="../Pages/Salon Homepage.html">Inicio</a>
-      <a href="../Pages/perfil.html">Editar Perfil</a>
-      <a href="../Pages/calendario.html">Calendario</a>
+      <a href="../Pages/usuario.html">Usuarios</a>
+      <a href="../Pages/inventario.html">Inventario</a>
       <div id="menuIcon" class="menu-icon">☰</div>
     </nav>
     <div id="sideMenu" class="side-menu">
@@ -29,44 +29,45 @@
     </div>
   </header>
 
-
   <section class="section">
-    <h2>Editar Perfil</h2>
-    <form class="form-usuarios" id="editForm">
+    <h2>Agregar Usuario</h2>
+    <form class="form-usuarios" id="userForm">
       <input type="text" id="nombre" placeholder="Nombre" required>
       <input type="text" id="apellido" placeholder="Apellido" required>
       <input type="email" id="correo" placeholder="Correo" required>
       <input type="text" id="contacto" placeholder="Teléfono" required>
-      <input type="text" id="cargo" placeholder="Cargo (ej: Peluquero, Manicurista)" required>
-
-      <div class="upload-wrapper">
-        <label class="upload-btn" for="fotoPerfil">Subir Foto de Perfil</label>
-        <input type="file" id="fotoPerfil" accept="image/*">
-        <div id="fotoPerfilContainer"></div>
-      </div>
-
-      <button type="submit" class="btn">Guardar Cambios</button>
+      <select id="tipoUsuario" required>
+        <option value="">Tipo Usuario</option>
+        <option value="Profesional">Profesional</option>
+        <option value="Administrador">Administrador</option>
+      </select>
+      <button type="submit" class="btn">Agregar</button>
     </form>
 
-    <h2>Galería de Fotos de Trabajo</h2>
-    <div class="upload-wrapper">
-      <label class="upload-btn" for="uploadFotos">Subir Fotos de Trabajo</label>
-      <input type="file" id="uploadFotos" multiple>
-    </div>
-
-    <div id="galeria" class="galeria"></div>
-
-    <h2>Comentarios de Clientes</h2>
-    <div id="comentariosContainer"></div>
+    <h2>Lista de Usuarios</h2>
+    <table id="userTable">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Correo</th>
+          <th>Teléfono</th>
+          <th>Tipo Usuario</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+      
+      </tbody>
+    </table>
   </section>
 
   <footer>
-    <p>© 2025 Todos los derechos reservados – CDLN Sistemas – Código Digital Logístico y Novedoso</p>
-    <p>📞 Teléfono: +57 123 456 7890 | ✉️ Correo: info@cdlnsistemas.com</p>
+    <p>© 2025   Todos los derechos reservados – CDLN Sistemas – Código Digital Logístico y Novedoso</p>
+     <p>📞 Teléfono: +57 123 456 7890 | ✉️ Correo: info@cdlnsistemas.com</p>
   </footer>
 
-
-  <script src="../validator/Profesional.js"></script>
   <script src="../validator/menu.js"></script>
+  <script src="../validator/usuarios.js"></script>
 </body>
 </html>

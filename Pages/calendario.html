@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario de Citas - Profesional</title>
+  <link rel="icon" type="image/png" href="../img/AfroDB.png"/>
+  <link rel="stylesheet" href="../style/calendario.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+ <div class="overlay" id="overlay"></div>
+
+<body>
+
+  <header>
+    <a href="../Pages/Salon Homepage.html" class="logo">
+      <img src="../img/AfroDB.png" alt="Logo AfroDB">
+    </a>
+    <nav>
+      <a href="../Pages/Salon Homepage.html">Inicio</a>
+      <a href="../Pages/perfil.html">Perfil</a>
+      <a href="../Pages/calendario.html">Calendario</a>
+     <div id="menuIcon" class="menu-icon">☰</div>
+    </nav>
+    <div id="sideMenu" class="side-menu">
+      <h3>Ingresar PIN</h3>
+      <input type="password" id="pinInput" placeholder="Escribe tu PIN">
+      <button id="btnPin">Entrar</button>
+    </div>
+  </header>
+
+  <div class="calendar-container">
+    <div class="calendar-header">
+      <button id="prevMonth">&lt;</button>
+      <h2 id="monthYear"></h2>
+      <button id="nextMonth">&gt;</button>
+    </div>
+
+    <div class="calendar-grid" id="calendarGrid"></div>
+
+    <div id="citasDia">
+      <h3>Citas del día</h3>
+      <ul id="listaCitas"></ul>
+    </div>
+  </div>
+    <footer>
+        <p>© 2025   Todos los derechos reservados – CDLN Sistemas – Código Digital Logístico y Novedoso</p>
+         <p>📞 Teléfono: +57 123 456 7890 | ✉️ Correo: info@cdlnsistemas.com</p>
+    </footer>
+
+  <script src="../validator/menu.js"></script>
+  <script src="../validator/calendario.js"></script>
+</body>
+</html>

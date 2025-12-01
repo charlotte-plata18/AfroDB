@@ -4,11 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="../img/AfroDB.png"/>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <title>DB Salon</title>
- <link rel="stylesheet" href="../style/salon.css" />
- 
+  <link rel="stylesheet" href="../style/salon.css" />
 </head>
 <body>
+  
   <header>
     <a href="../Pages/Salon Homepage.html" class="logo">
       <img src="../img/AfroDB.png" alt="Logo AfroDB">
@@ -19,10 +20,20 @@
       <a href="../Pages/productos.html">Productos</a>
       <a href="../Pages/registro.html">Registro</a>
       <a href="../Pages/agen.html">Agenda tu cita</a>
-      <a href="#">Contacto</a>
+      <div id="menuIcon" class="menu-icon">☰</div>
+      <a href="#footer">Contacto</a>
     </nav>
+
+    <div id="sideMenu" class="side-menu">
+      <h3>Ingresar PIN</h3>
+      <input type="password" id="pinInput" placeholder="Escribe tu PIN">
+      <button id="btnPin">Entrar</button>
+    </div>
   </header>
 
+
+
+<div class="overlay" id="overlay"></div>
   <section class="hero">
     <h1>Siéntete bella todos los días</h1>
     <a class="btn" href="../Pages/Salon Homepage.html">Reservar cita</a>
@@ -138,11 +149,14 @@
   <section class="section">
     <h2>Agenda Rápida</h2>
     <p>Reserva tu cita en 3 pasos: Elige servicio → Profesional → Fecha</p>
-    <a class="btn" href="#">Reservar ahora</a>
+    <a class="btn" href="../Pages/agen.html">Reservar ahora</a>
   </section>
 
-  <footer>
+  <footer id="footer">
     <p>© 2025   Todos los derechos reservados – CDLN Sistemas – Código Digital Logístico y Novedoso  </p>
+     <p>📞 Teléfono: +57 123 456 7890 | ✉️ Correo: info@cdlnsistemas.com</p>
   </footer>
+
+  <script src="../validator/menu.js"></script>
 </body>
 </html>

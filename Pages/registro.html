@@ -3,78 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../img/Logo AfroDB.png">
-    <title>Registro</title>
-
-    <!-- Íconos Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-
+    <link rel="icon" type="image/png" href="../img/AfroDB.png">
+    <title>Registrate</title>
     <link rel="stylesheet" href="../style/registro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
 
-    <!-- Botones en la esquina superior derecha -->
-    <div class="top-links">
-        <a href="../Pages/index.html" class="login-btn">INICIAR SESIÓN</a>
-        <a href="../Pages/Salon Homepage.html" class="login-btn secondary">PÁGINA PRINCIPAL</a>
-        
-    </div>
-    <!-- Caja de registro -->
-    <div class="form-container">
-
-        <div class="logo">DB</div>
+     
+     <div class="left">
+        <h1>Bienvenido a <span>AFRODB</span></h1>
+        <p>Regístrate para continuar.</p>
+     </div>
+     <div class="right">
+     <div class="form-container">
+    
+        <div class="logo">
+            <img src="../img/AfroDB.png" alt="Logo AfroDB">
+            <h2>Registrarse</h2>
+        </div>
 
         <form>
 
-            <div class="input-box">
-                <i class="fa-solid fa-id-card icon"></i>
-                <input type="text" placeholder="NÚMERO DE DOCUMENTO">
-            </div>
+    <div class="form-grid">
 
-            <div class="input-box">
-                <i class="fa-solid fa-file-lines icon"></i>
-                <select>
-                    <option disabled selected>TIPO DE DOCUMENTO</option>
-                    <option>Cédula</option>
-                    <option>Tarjeta de identidad</option>
-                    <option>Cédula extranjera</option>
-                </select>
-            </div>
+        <div class="input-box">
+            <i class="fa-solid fa-id-card icon"></i>
+            <input type="text" placeholder="#Documento">
+        </div>
 
-            <div class="input-box">
-                <i class="fa-solid fa-user icon"></i>
-                <input type="text" placeholder="NOMBRE Y APELLIDOS">
-            </div>
+        <div class="input-box">
+            <i class="fa-solid fa-file-lines icon"></i>
+            <select>
+                <option disabled selected>Tipo de documento</option>
+                <option>Cédula</option>
+                <option>Tarjeta de identidad</option>
+                <option>Cédula extranjera</option>
+            </select>
+        </div>
 
-            <div class="input-box">
-                <i class="fa-solid fa-location-dot icon"></i>
-                <input type="text" placeholder="DIRECCIÓN">
-            </div>
+        <div class="input-box full">
+            <i class="fa-solid fa-user icon"></i>
+            <input type="text" placeholder="Nombres y Apellidos">
+        </div>
 
-            <div class="input-box">
-                <i class="fa-solid fa-phone icon"></i>
-                <input type="text" placeholder="TELÉFONO">
-            </div>
+        <div class="input-box">
+            <i class="fa-solid fa-location-dot icon"></i>
+            <input type="text" placeholder="Dirección">
+        </div>
 
-            <div class="input-box">
-                <i class="fa-solid fa-envelope icon"></i>
-                <input type="email" placeholder="CORREO ELECTRÓNICO">
-            </div>
+        <div class="input-box">
+            <i class="fa-solid fa-phone icon"></i>
+            <input type="text" placeholder="Telefono">
+        </div>
 
-            <div class="input-box">
-                <i class="fa-solid fa-lock icon"></i>
-                <input type="password" placeholder="CLAVE">
-            </div>
+        <div class="input-box full">
+            <i class="fa-solid fa-envelope icon"></i>
+            <input type="email" placeholder="Correo electrónico">
+        </div>
 
-            <button class="btn-register">REGISTRARME!</button>
-        </form>
+        <div class="input-box full">
+            <i class="fa-solid fa-lock icon"></i>
+            <input type="password" placeholder="clave">
+        </div>
+
     </div>
 
-    <!-- Footer -->
-    <footer>
-     <p> © 2025   Todos los derechos reservados – CDLN Sistemas – Código Digital Logístico y Novedoso</p>   
-    </footer>
+   
+    <button class="btn-register">Registrarse</button>
+
+    <p class="register">¿Tienes cuenta? 
+        <a href="../Pages/index.html">Iniciar Sesión</a>
+    </p>
+
+</form>
+    </div>
+    </div>
+    
 
 </body>
+<script src="../validator/registro.js"></script>
 </html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Métodos de Pago</title>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/pago.css" />
+  <link rel="icon" href="../img/AfroDB.png" type="image/png" />
+</head>
+
+<body>
+
+  <header class="header">
+    <img src="../img/AfroDB.png" alt="Logo" class="logo">
+    <h2 class="titulo">Métodos de Pago</h2>
+  </header>
+
+  <div class="contenedor">
+
+    <h3 class="subtitulo">Selecciona tu método de pago</h3>
+
+    <form id="formPago" class="formulario">
+
+      <label class="opcion">
+        <input type="radio" name="pago" value="Nequi">
+        Nequi
+      </label>
+
+      <label class="opcion">
+        <input type="radio" name="pago" value="Daviplata">
+        Daviplata
+      </label>
+
+      <label class="opcion">
+        <input type="radio" name="pago" value="Tarjeta">
+        Tarjeta de crédito / débito
+      </label>
+
+      <label class="opcion">
+        <input type="radio" name="pago" value="Efectivo">
+        Pago en efectivo
+      </label>
+
+      <button class="btn-pagar" type="submit">Confirmar Pago</button>
+
+    </form>
+
+  </div>
+
+  <footer class="footer">
+    © 2025 AfroDB Salon – Todos los derechos reservados
+  <p>📞 Teléfono: +57 123 456 7890 | ✉️ Correo: info@cdlnsistemas.com</p>
+  </footer>
+
+  <script src="../validator/metodoPago.js"></script>
+</body>
+</html>

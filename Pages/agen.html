@@ -4,13 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="../img/AfroDB.png"/>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <title>Agendar cita</title>
   <link rel="stylesheet" href="../style/age.css"/>
 </head>
 <body>
 
 <header>
-  <h2>AfroDB</h2>
+  <img src="../img/AfroDB.png" alt="Logo de DB Salon"/>
   <nav>
     <a href="../Pages/Salon Homepage.html">Inicio</a>
     <a href="../Pages/servicios.html">Servicios</a>
@@ -77,14 +78,51 @@
 
     </div>
     </div>
-    
+
+   <div class="servicios-section">
+  <h3>2. Selecciona el servicio</h3>
+
+  <select id="categoria" class="servicio-select">
+    <option value="">-- Selecciona una categoría --</option>
+    <option value="cabello"> Cuidado del Cabello</option>
+    <option value="uñas">Uñas</option>
+    <option value="Belleza">Belleza Facial</option>
+    <option value="Tratamientos">Tratamientos Capilares</option>
+  </select>
+
+  <select id="servicio" class="servicio-select" disabled>
+    <option value="">-- Selecciona un servicio --</option>
+  </select>
+</div>
+
+<div class="hora-section">
+  <h3>4. Selecciona la hora</h3>
+  <select class="hora-select">
+    <option value="">-- Selecciona una hora --</option>
+    <option>08:00 AM</option>
+    <option>09:00 AM</option>
+    <option>10:00 AM</option>
+    <option>11:00 AM</option>
+    <option>02:00 PM</option>
+    <option>03:00 PM</option>
+    <option>04:00 PM</option>
+  </select>
+</div>
+
+<div class="comentarios-section">
+  <h3>5. Comentarios adicionales</h3>
+  <textarea class="comentarios" placeholder="Especifica detalles de tu cita..."></textarea>
+</div>
+
   <button class="btn-reservar">Reservar cita</button>
 
 </div>
 
 <footer>
   <p>© 2025   Todos los derechos reservados – CDLN Sistemas – Código Digital Logístico y Novedoso</p>
+   <p>📞 Teléfono: +57 123 456 7890 | ✉️ Correo: info@cdlnsistemas.com</p>
 </footer>
 
+<script src="../validator/agendar.js"></script>
 </body>
 </html>

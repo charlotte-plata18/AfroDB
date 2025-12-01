@@ -3,47 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../img/AfroDB.png">
-    <title>Pantalla de Inicio</title>
-
-    <!-- ICONOS EXTERNOS Y FUENTES --> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-
-
+    <title>AfroDB - Iniciar Sesión</title>
     <link rel="stylesheet" href="../style/styles.css">
-    
+    <link rel="icon" type="image/png" href="../img/AfroDB.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <a href="../Pages/registro.html" class="registrarme">REGISTRARME!!</a>
+<div class="container">
 
-    <!-- FONDO -->
-    <div class="background"></div>
-
-    <!-- LOGIN -->
-    <div class="login-box">
-        <div class="logo"></div>
-
-        <form>
-            <div class="input-group">
-                <i class="fa-solid fa-envelope icon"></i>
-                <input type="email" placeholder="CORREO ELECTRÓNICO">
-            </div>
-
-            <div class="input-group">
-                <i class="fa-solid fa-key icon"></i>
-                <input type="password" placeholder="CLAVE">
-            </div>
-           <a href="../Pages/Salon Homepage.html">
-            <button type="button" class="btn">INICIAR SESIÓN</button>
-           </a>
-        </form>
+    <div class="left">
+        <h1>Bienvenido a <span>AFRODB</span>!</h1>
+        <p>Tu salón de belleza a un click.</p>
     </div>
 
-    <footer>
-        © Todos los derechos reservados a AfroDB 2025
-    </footer>
+    <div class="right">
+        <div class="login-box">
+            <img src="../img/AfroDB.png" class="logo" alt="Logo">
+
+            <h2>Iniciar Sesión</h2>
+
+           
+            <form id="loginForm">
+                <div class="input-group">
+                    <label>Correo</label>
+                    <input type="email" placeholder="Correo electrónico" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Contraseña</label>
+                    <input type="password" placeholder="Contraseña" required>
+                </div>
+
+                <div class="options">
+                    <label><input type="checkbox"> Recuérdame</label>
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+               
+               
+               <button type="submit" class="btn">Iniciar Sesión</button>
+
+                <p class="register">¿No tienes cuenta? <a href="../Pages/registro.html">Regístrate</a></p>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="../validator/login.js"></script>
 
 </body>
 </html>
