@@ -105,15 +105,6 @@ nav a:hover {
 }
 
    
-.search-box input {
-  padding: 8px 12px;
-  border-radius: 20px;
-  border: 1px solid #d9c2a5;
-  outline: none;
-  background: #fff;
-  width: 180px;
-  transition: 0.2s;
-}
 footer {
   background: rgb(209, 174, 143);
   color: #4b3a2f;
