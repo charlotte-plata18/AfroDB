@@ -1,14 +1,14 @@
-/* ======== ESTILO GENERAL ======== */
+
 
 body {
   font-family: poppins, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4efe9; /* tono tierra suave */
+  background: #f4efe9; 
   color: #4a3f35;
 }
 
-/* ======== HEADER ======== */
+
 
 header {
   display: flex;
@@ -22,14 +22,25 @@ header {
   z-index: 10;
   color: #ffffff;
 }
+header img{
+  width: 80px;         
+  height: 80px;        
+  border-radius: 3000%;   
+  object-fit: cover;    
+  display: block;
+}
 
 header nav a {
-  margin: 0 10px;
   text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
+    margin-left: 20px;
+    color: #4b3a2f;
+    font-weight: 600;
+    transition: 0.3s;
 }
-/* --- NAVBAR NUEVO LADO DERECHO --- */
+    nav a:hover {
+    color: white;
+    
+}
 
 .nav-right {
   display: flex;
@@ -37,7 +48,7 @@ header nav a {
   gap: 15px;
 }
 
-/* BUSCADOR */
+
 .search-box input {
   padding: 8px 12px;
   border-radius: 20px;
@@ -53,7 +64,6 @@ header nav a {
   border-color: #a57d63;
 }
 
-/* ICONO DE CARRITO */
 .cart-btn {
   background: #a78c7a;
   color: #fff;
@@ -67,10 +77,11 @@ header nav a {
 
 .cart-btn:hover {
   background: #8d6b55;
+  
 }
 
 
-/* ======== CONTENEDOR PRINCIPAL ======== */
+
 
 .container {
   display: flex;
@@ -79,7 +90,7 @@ header nav a {
   gap: 20px;
 }
 
-/* ======== SECCIONES: PRODUCTOS + CARRITO ======== */
+
 
 .products,
 .cart {
@@ -95,7 +106,7 @@ h2 {
   color: #6e5846;
 }
 
-/* ======== PRODUCTOS ANTIGUOS ======== */
+
 
 .product {
   display: flex;
@@ -118,7 +129,7 @@ h2 {
   background: #8d6b55;
 }
 
-/* ======== NUEVO GRID DE TARJETAS ======== */
+
 
 .product-grid {
   display: grid;
@@ -133,7 +144,7 @@ h2 {
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   text-align: center;
-  min-height: 330px; /* Aumenta el tamaño */
+  min-height: 330px; 
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -144,7 +155,7 @@ h2 {
 
 .card img {
   width: 100%;
-  height: 200px; /* imagen más grande */
+  height: 200px; 
   object-fit: cover;
   border-radius: 10px;
 }
@@ -173,7 +184,7 @@ h2 {
   background: #8d6b55;
 }
 
-/* ======== CARRITO ======== */
+
 
 .cart-item {
   padding: 8px 0;
@@ -186,12 +197,13 @@ h2 {
   font-weight: bold;
 }
 
-/* ======== FOOTER ======== */
+
 
 footer {
   background: rgb(209, 174, 143);
-  color:#FFFFFF;
+  color: #4b3a2f;
   font-weight: bold;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
+  margin-top: auto;
 }

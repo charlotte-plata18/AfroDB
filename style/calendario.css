@@ -1,0 +1,249 @@
+/* --- Estilos generales --- */
+body {
+  margin: 0;
+  font-family: poppins, Arial, sans-serif;
+  background: #fafafa;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgb(209, 174, 143);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header .logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  font-weight: 600;
+}
+
+header nav a,
+header nav a:link,
+header nav a:visited {
+  color: #4b3a2f; 
+  text-decoration: none; 
+}
+
+header nav a:hover,
+header nav a:active {
+  color: white; 
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  color: #4a3d32;
+  z-index: 1000;
+  order: 1;
+}
+.menu-icon:hover {
+  color: #351f18;
+  transition: 0.03s;
+}
+
+/* --- Overlay y Side Menu --- */
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+  z-index: 1000;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.overlay.active {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -560px;
+  width: 260px;
+  height: 100%;
+  background: #fff8ef;
+  box-shadow: 3px 0 10px rgba(0,0,0,0.25);
+  padding: 30px 20px;
+  transition: right 0.3s ease;
+  z-index: 1005;
+}
+
+.side-menu.active {
+  right: 0;
+}
+
+.side-menu h3 {
+  margin-top: 0;
+  color: #4a3d32;
+}
+
+.side-menu input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #cdb8a5;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.side-menu button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background: rgb(209, 174, 143);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.side-menu button:hover {
+  background: #9a7962;
+  transform: translateY(-2px);
+  transition: transform 0.12s ease;
+}
+
+/* --- Secciones --- */
+.section.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.section h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.section.hero p {
+  font-size: 1.2rem;
+}
+
+/* --- Calendario --- */
+.calendar-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.calendar-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.calendar-header button {
+  background: #bf8e72;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.calendar-header button:hover {
+  background: #351f18;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-grid .day {
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  background: #fff;
+}
+
+.calendar-grid .day:hover {
+  background: #f0e2d6;
+  transform: scale(1.05);
+}
+
+.calendar-grid .today {
+  border: 2px solid #bf8e72;
+}
+
+.calendar-grid .has-cita {
+  background: #bf8e72;
+  color: white;
+  font-weight: bold;
+}
+
+/* --- Citas del día --- */
+#citasDia {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#citasDia h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+#citasDia ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#citasDia ul li {
+  margin-bottom: 8px;
+  font-weight: 500;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* --- Footer --- */
+footer {
+  background: rgb(209, 174, 143);
+  color: #483a30;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+  margin-top: auto;
+}

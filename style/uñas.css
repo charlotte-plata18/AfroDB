@@ -1,17 +1,24 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f5f0; /* color tierra suave */
-  color: #4b3f2f; /* marrón oscuro para texto */
+  font-family: poppins, Arial, sans-serif;
+  background-color: #f9f5f0; 
+  color: #4b3f2f; 
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: rgb(209, 174, 143);; /* pastel tierra */
+  background-color: rgb(209, 174, 143);; 
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+header img {
+  width: 80px;         
+  height: 80px;        
+  border-radius: 3000%;   
+  object-fit: cover;    
+  display: block;
 }
 
 nav a {
@@ -20,6 +27,9 @@ nav a {
   color: #4b3f2f;
   font-weight: bold;
 }
+   nav a:hover {
+    color: white;
+    }
 
 .container {
   padding: 30px;
@@ -33,7 +43,7 @@ nav a {
 }
 
 .card {
-  background-color:  #cdb6a0; /* pastel claro */
+  background-color:  #cdb6a0; 
   padding: 15px;
   border-radius: 15px;
   text-align: center;
@@ -48,7 +58,7 @@ nav a {
 }
 
 button {
-  background-color:#a97b52; /* color tierra */
+  background-color:#a97b52;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -94,4 +104,15 @@ button:hover {
 
 .card:hover {
   transform: translateY(-4px);
+  transition: transform 0.3s;
+}
+
+.search-box input {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #d9c2a5;
+  outline: none;
+  background: #fff;
+  width: 180px;
+  transition: 0.2s;
 }

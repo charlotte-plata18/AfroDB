@@ -1,13 +1,13 @@
-/* GENERAL */
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: poppins, Arial, sans-serif;
   background-color: #f4ece3;
   color: #4b2e1f;
 }
 
 header {
-  background-color: rgb(209, 174, 143);;
+  background-color: rgb(209, 174, 143);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -16,10 +16,22 @@ header {
 }
 
 header nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+ text-decoration: none;
+    margin-left: 20px;
+    color: #4b3a2f;
+    font-weight: 600;
+    transition: 0.3s;
+    }
+    nav a:hover {
+    color: white;
+    }
+
+header img{
+  width: 80px;         
+  height: 80px;        
+  border-radius: 3000%;   
+  object-fit: cover;    
+  display: block;
 }
 
 .agendar-container {
@@ -33,7 +45,7 @@ header nav a {
   margin-bottom: 30px;
 }
 
-/* CALENDARIO */
+
 .calendar-section h3,
 .profesionales-section h3 {
   margin-bottom: 10px;
@@ -49,7 +61,7 @@ header nav a {
   background-color: #fff;
 }
 
-/* PROFESIONALES */
+
 .profesional-card {
   background-color: #fff;
   border: 1px solid #d3b8a3;
@@ -69,7 +81,7 @@ header nav a {
   margin-right: 15px;
 }
 
-/* BOTÓN RESERVAR */
+
 .btn-reservar {
   display: block;
   margin: 40px auto;
@@ -87,12 +99,56 @@ header nav a {
   background-color: #6d452d;
 }
 
-/* FOOTER */
+.servicios-section,
+.hora-section,
+.comentarios-section {
+  margin-top: 25px;
+}
 
-    footer {
-      background: rgb(209, 174, 143);
-      color:#FFFFFF;
-      font-weight: bold;
-      padding: 20px;
-      text-align: center;
+.servicio-select,
+.hora-select,
+.comentarios {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #d1c7c4;
+  border-radius: 8px;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Hover */
+.servicio-select:hover,
+.hora-select:hover,
+.comentarios:hover {
+  border-color: #b39a93;
+}
+
+
+.comentarios {
+  height: 100px;
+  resize: none;
+}
+
+
+.servicios-section h3,
+.hora-section h3,
+.comentarios-section h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #4b2e22;
+}
+
+.servicio-select {
+  margin-bottom: 10px;
+}
+
+
+  footer {
+  background: rgb(209, 174, 143);
+  color: #4b3a2f;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+  margin-top: auto;
     }

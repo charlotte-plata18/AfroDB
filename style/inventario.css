@@ -141,39 +141,39 @@ header nav a:active {
   font-size: 1.2rem;
 }
 
-.form-usuarios {
+
+.form-inventario {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
+  margin: 20px auto;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 900px;
 }
 
-.form-usuarios input, .form-usuarios select {
+.form-inventario input {
   padding: 12px;
   border-radius: 8px;
   border: 1px solid #cdb8a5;
   font-size: 1rem;
-  width: 180px;
+  width: 200px;
 }
 
-.form-usuarios .btn {
-  background: rgba(191, 142, 114, 1);
+.form-inventario .btn {
+  background: rgb(208, 161, 134);
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
   transition: 0.3s;
-  padding: 10px 20px;
-  width: auto;
-  height: 30px;
 }
 
-.form-usuarios .btn:hover {
-  background: #351f18;
+.form-inventario .btn:hover {
+  background: #725147;
   transform: scale(1.05);
 }
+
 
 table {
   width: 100%;
@@ -188,7 +188,6 @@ table th, table td {
   padding: 12px;
   text-align: center;
   font-weight: 600;
-   margin-top: auto;
 }
 
 table th {
@@ -218,137 +217,30 @@ table button:hover {
   transform: scale(1.05);
 }
 
-@media (max-width: 700px) {
-  .form-usuarios {
-    flex-direction: column;
-    align-items: center;
-  
-  }
 
-  .form-usuarios input, .form-usuarios select {
-    width: 100%;
-    max-width: 300px;
-  
-  }
-}
-
-footer {
-  background: rgb(209, 174, 143);
-  color: #483a30;
-  font-weight: bold;
-  padding: 15px;
-  text-align: center;
-  margin-top: 200px;
-}
-
-/* Uploads */
-.upload-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 15px;
-}
-
-.upload-wrapper input[type="file"] {
-  display: none;
-}
-
-.upload-btn {
-  background: #bf8e72;
-  color: white;
+.btn {
+  background: rgba(191, 142, 114, 1);
   padding: 12px 25px;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  margin-bottom: 10px;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 10px;
+  display: inline-block;
   transition: 0.3s;
 }
 
-.upload-btn:hover {
+.btn:hover {
   background: #351f18;
   transform: scale(1.05);
 }
 
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-  margin-top: 10px;
-}
 
-.galeria .foto-card {
-  position: relative;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
+footer {
+  background: rgb(209, 174, 143);
+  color: #4b3a2f;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+  margin-top: auto;
 }
-
-.galeria .foto-card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
-
-.galeria .foto-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-}
-
-.foto-card {
-  position: relative;
-  display: inline-block;
-  margin-right: 10px;
-}
-.foto-card button {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  background: rgba(191, 142, 114, 0.8);
-  border: none;
-  color: #fff;
-  padding: 4px 8px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 0.8rem;
-  transition: 0.2s;
-}
-
-.foto-card button:hover {
-  background: #351f18;
-}
-.section.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-/* Comentarios */
-#comentariosContainer {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.comentario {
-  background-color: #f8f8f8;
-  padding: 12px 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.comentario strong {
-  color: #4b2e22;
-}
-.foto-perfil-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 10px; /* espacio entre botón y input */
-  margin-top: 10px;
-}
-
-.foto-perfil-wrapper .btn {
-  padding: 10px 20px;
-  height: auto; /* que tome el contenido */
-  width: auto;
-}
+    

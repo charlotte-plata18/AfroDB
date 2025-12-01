@@ -1,104 +1,198 @@
-body {
+/* RESET GENERAL */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: url('../img/imagen_1.png') no-repeat center center/cover;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Contenedor de enlaces superiores */
-.top-links {
-    position: absolute;
-    top: 25px;
-    right: 40px;
+body {
     display: flex;
-    gap: 12px;
-    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
-/* Botón de iniciar sesión (estilo base) */
-.login-btn {
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
-    text-decoration: none;
-    padding: 6px 10px;
-    border-radius: 6px;
-}
-
-/* Variante secundaria si se necesita estilo distinto */
-
-/* Caja del formulario */
-.form-container {
-    width: 360px;  /* MÁS PEQUEÑA */
-    padding: 20px;
-    background: #f7e9e3;
-    border-radius: 18px;
-    margin: 75px auto;
-    box-shadow: 0 6px 20px rgba(216, 12, 12, 0.25);
+/* ------------------ LEFT ------------------ */
+.left {
+    flex: 1.5;
+    background: url('../img/salondebelleza.webp') no-repeat center center/cover;
     position: relative;
-    text-align: center;
-}
-
-/* Logo */
-.logo {
-     width: 100px;
-    height: 100px;
-    background: #D9B28C;
-    border-radius: 50%;
-    margin: -80px auto 10px;
+    padding: 80px;
+    color: #ffffff;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    font-size: 40px;
-    font-family:'Allura', cursive;
-    font-weight: bold;
-    color: #5a3d28;
 }
 
-/* Inputs */
-.input-box {
+.left::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(6px);
+}
+
+.left h1,
+.left p {
+    position: relative;
+    z-index: 2;
+}
+
+.left h1 {
+    font-size: 50px;
+    line-height: 1.1;
+}
+
+.left h1 span {
+    color: #e2b189;
+}
+
+.left p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+/* ------------------ RIGHT ------------------ */
+.right {
+    flex: 0.55;
+    background: #ddbda4;
     display: flex;
+    justify-content: center;
     align-items: center;
-    background: white;
-    border: 2px solid #b9a394;
-    border-radius: 8px;
-    margin: 7px 0;
-    padding: 4px;
+    padding: 15px;
+    backdrop-filter: blur(4px);
 }
 
 
-.input-box .icon {
-    font-size: 17px;
-    margin-right: 10px;
-    color: #6b5b4d;
+.form-container {
+    width: 380px;                
+    background-color: rgb(197, 162, 143);
+    backdrop-filter: blur(2px);
+    border-radius: 24px;
+    padding: 10px 20px;
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+
+
+.logo {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.logo img {
+    width: 95px;
+    border-radius: 50%;
+}
+
+.logo h2 {
+    margin-top: 10px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #4b2e22;
+}
+
+/* ------------------ INPUTS ------------------ */
+.form-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 18px;
+}
+
+.full {
+    grid-column: span 2;
+}
+
+.input-box {
+    position: relative;
 }
 
 .input-box input,
 .input-box select {
     width: 100%;
-    border: none;
-    background: transparent;
+    padding: 11px 45px;
+    border: 2px solid #c09a7a;
+    border-radius: 8px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.60);
     outline: none;
-    padding: 8px;
-    font-size: 13px;
-    color: #333333ce;
 }
 
-/* Botón registrar */
+.icon {
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #4b2e22;
+}
+
+
+/* ------------------ BUTTON ------------------ */
 .btn-register {
+    margin: 20px 0 10px;
     width: 100%;
     padding: 12px;
-    background: #f6d9d0;
-    border: none;
+    background: #4b2e22;
     border-radius: 8px;
-    font-weight: bold;
+    font-size: 17px;
     cursor: pointer;
-    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    color: #fff;
+    border: none;
+    letter-spacing: 0.5px;
 }
 
-/* Footer */
-footer {
+.btn-register:hover {
+    background: #351f18;
+    transform: translateY(-2px);
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+@media (max-width: 900px) {
+    body {
+        flex-direction: column;
+    }
+
+    .left {
+        height: 40vh;
+    }
+
+    .right {
+        height: 60vh;
+        padding: 40px;
+    }
+
+    .form-container {
+        width: 85%;
+    }
+}
+
+@media (max-width: 700px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    .full {
+        grid-column: span 1;
+    }
+}
+.register {
+    margin-top: 15px;
+    font-size: 14px;
     text-align: center;
-    color: white;
-    margin-top: 40px;
-    font-weight: bold;
+}
+
+.register a {
+    color: #4b2e22;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
 }

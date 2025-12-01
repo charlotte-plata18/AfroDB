@@ -1,17 +1,24 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f5f0; /* color tierra suave */
-  color: #4b3f2f; /* marrón oscuro para texto */
+  font-family: poppins, Arial, sans-serif;
+  background-color: #f9f5f0; 
+  color: #4b3f2f; 
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: rgb(209, 174, 143);; /* pastel tierra */
+  background-color: rgb(209, 174, 143);; 
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+header img {
+  width: 80px;         
+  height: 80px;        
+  border-radius: 3000%;   
+  object-fit: cover;    
+  display: block;
 }
 
 nav a {
@@ -19,6 +26,7 @@ nav a {
   text-decoration: none;
   color: #4b3f2f;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 .container {
@@ -33,7 +41,7 @@ nav a {
 }
 
 .card {
-  background-color:  #cdb6a0; /* pastel claro */
+  background-color:  #cdb6a0; 
   padding: 15px;
   border-radius: 15px;
   text-align: center;
@@ -46,9 +54,14 @@ nav a {
   height: auto;
   object-fit: cover;
 }
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
 
 button {
-  background-color:#a97b52; /* color tierra */
+  background-color:#a97b52; 
   color: white;
   border: none;
   padding: 10px 15px;
@@ -61,15 +74,17 @@ button:hover {
   background-color: #c08b5b;
 }
 
-    footer {
-      background: rgb(209, 174, 143);
-      color:#FFFFFF;
-      font-weight: bold;
-      padding: 20px;
-      text-align: center;
-    }
+footer {
+  background: rgb(209, 174, 143);
+  color: #4b3a2f;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+  margin-top: auto;
+}
 
-    /* BUSCADOR */
+
+
 .search-box input {
   padding: 8px 12px;
   border-radius: 20px;
