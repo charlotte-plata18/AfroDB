@@ -1,0 +1,158 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f6f1ee;
+  margin: 0;
+  padding: 0;
+  color: #4a3d32;
+}
+
+header {
+  background-color:rgb(209, 174, 143); /* beige tierra */
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  margin: 0;
+  color: #4b3a2f;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+header img {
+  width: 80px;         
+  height: 80px;        
+  border-radius: 3000%;   
+  object-fit: cover;    
+  display: block;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #4b3a2f;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 32px;
+  color: #4a3d32;
+}
+
+.profesionales-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+
+.prof-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.prof-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.prof-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid #e7d9cf;
+}
+
+
+.prof-card h2 {
+  margin: 10px 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #4a3d32;
+}
+
+.especialidad {
+  color: #6b5a50;
+  font-size: 14px;
+  margin: 6px 0 10px;
+}
+
+
+.rating {
+  font-size: 20px;
+  color: #d4a373;
+  margin-bottom: 10px;
+}
+
+
+.desc {
+  font-size: 14px;
+  padding: 0 10px;
+  margin-bottom: 15px;
+  color: #4a3d32;
+}
+
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0 20px;
+}
+
+.gallery img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 3px solid #e7d9cf;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #4b2e22;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #351f18;
+  transform: scale(1.05);
+}
+
+
+footer {
+  background: rgb(209, 174, 143);
+  color: #4b3a2f;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}

@@ -47,15 +47,15 @@
 
         <div class="input-box full">
             <i class="fa-solid fa-user icon"></i>
-            <input type="text" placeholder="Nombres y Apellidos">
+            <input type="text" placeholder="Nombres">
         </div>
 
-        <div class="input-box">
-            <i class="fa-solid fa-location-dot icon"></i>
-            <input type="text" placeholder="Dirección">
+         <div class="input-box full">
+            <i class="fa-solid fa-user icon"></i>
+            <input type="text" placeholder="Apellidos">
         </div>
 
-        <div class="input-box">
+        <div class="input-box full">
             <i class="fa-solid fa-phone icon"></i>
             <input type="text" placeholder="Telefono">
         </div>
@@ -71,13 +71,42 @@
         </div>
 
     </div>
+ <div class="input-box full">
 
+   <div class="input-box direccion full">
+    <i class="fa-solid fa-location-dot icon"></i>
+
+    <div class="direccion-group">
+        <select name="tipo_via" class="direccion-select" required>
+            <option disabled selected>Tipo</option>
+            <option value="calle">Calle</option>
+            <option value="carrera">Carrera</option>
+            <option value="avenida">Avenida</option>
+            <option value="transversal">Transversal</option>
+            <option value="diagonal">Diagonal</option>
+            <option value="circular">Circular</option>
+            <option value="autopista">Autopista</option>
+        </select>
+
+        <input type="text" name="via_principal" class="dir-num" placeholder="45" required>
+        <span>#</span>
+
+        <input type="text" name="via_secundaria" class="dir-num" placeholder="12" required>
+        <span>-</span>
+
+        <input type="text" name="numero_predio" class="dir-num" placeholder="08" required>
+
+        <input type="text" name="complemento" class="dir-comp" placeholder="Complemento (Opcional)">
+    </div>
+</div>
+</div>
    
-    <button class="btn-register">Registrarse</button>
-
     <p class="register">¿Tienes cuenta? 
         <a href="../Pages/index.html">Iniciar Sesión</a>
     </p>
+    <button class="btn-register">Registrarse</button>
+
+   
 
 </form>
     </div>

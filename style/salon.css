@@ -296,3 +296,46 @@ footer {
   display: block;
   opacity: 0;
 }
+
+.profile-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: #dba789;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  background-color: #f6f1ee;
+}
+
+.btn {
+  background: #c2a390;
+  color: rgb(251, 251, 251);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+} 
+.btn:hover {
+  background: #a18376;
+  transform: translateY(-2px);
+  transition: transform 0.12s ease;
+}
+
+
+.profile-info {
+  flex: 1;       
+  text-align: center;
+}
+
+.profile-info h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.profile-info p {
+  margin: 4px 0;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="image/png" href="../img/AfroDB.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Editar Perfil</title>
+    <link rel="stylesheet" href="../style/editar-usuario.css">
+</head>
+<body>
+ <header>
+  <img src="../img/AfroDB.png" alt="Logo de DB Salon"/>
+  <nav>
+    <a href="../Pages/Salon Homepage.html">Inicio</a>
+    <a href="../Pages/servicios.html">Servicios</a>
+    <a href="../Pages/productos.html">Productos</a>
+    <a href="../Pages/registro.html">Registro</a>
+    <a href="../Pages/agen.html">Agenda tu cita</a>
+  </nav>
+</header>
+
+<div class="container">
+
+    <h1>Editar Perfil</h1>
+
+<form id="editForm" class="form">
+
+    <div class="profile-box">
+        <div class="avatar">
+            <img src="../img/usuario.png" alt="Usuario">
+            <button class="btn-change">Cambiar foto</button>
+        </div>
+
+        <form class="form">
+
+            <div class="form-grid">
+                <div class="input-box">
+                    <label>Nombre</label>
+                    <input id="nombre" type="text" placeholder="Escribe tu nombre">
+                </div>
+
+                <div class="input-box">
+                    <label>Apellido</label>
+                   <input id="apellido" type="text" placeholder="Escribe tu apellido">
+                </div>
+
+                <div class="input-box full">
+                    <label>Correo electrónico</label>
+                    <input id="correo" type="email" placeholder="tuemail@gmail.com">
+                </div>
+
+                <div class="input-box">
+                    <label>Teléfono</label>
+                    <input id="telefono" type="number" placeholder="Ej: 3201234567">
+                </div>
+
+                <div class="input-box">
+                    <label>Fecha de nacimiento</label>
+                    <input id="fecha" type="date">
+
+                </div>
+
+                <div class="input-box full">
+                    <label>Dirección</label>
+                   <input id="direccion" type="text" placeholder="Calle 123 # 45 - 67">
+                </div>
+
+            </div>
+
+            <button type="submit" class="btn-save">Guardar Cambios</button>
+        </form>
+</form>
+
+    </div>
+
+</div>
+
+  <footer id="footer">
+    <p>© 2025   Todos los derechos reservados – CDLN Sistemas – Código Digital Logístico y Novedoso  </p>
+    <p>📞 Teléfono: +57 123 456 7890 | ✉️ Correo: info@cdlnsistemas.com</p>
+  </footer>
+
+  <script src="../validator/editarusu.js"></script>
+</body>
+</html>
