@@ -1,4 +1,4 @@
-// Referencias a inputs, botones y tabla
+
 const nombreInput = document.getElementById('nombre');
 const precioInput = document.getElementById('precio');
 const cantidadInput = document.getElementById('cantidad');
@@ -7,7 +7,7 @@ const tabla = document.getElementById('tablaInventario').querySelector('tbody');
 
 let inventario = [];
 
-// Función para renderizar la tabla con estilo de tu CSS
+
 function renderTabla() {
   tabla.innerHTML = '';
   inventario.forEach((producto, index) => {
@@ -25,7 +25,7 @@ function renderTabla() {
   });
 }
 
-// Función para agregar producto
+
 btnAgregar.addEventListener('click', () => {
   const nombre = nombreInput.value.trim();
   const precio = parseFloat(precioInput.value);
@@ -43,7 +43,7 @@ btnAgregar.addEventListener('click', () => {
   renderTabla();
 });
 
-// Función para editar producto
+
 function editarProducto(index) {
   const producto = inventario[index];
   nombreInput.value = producto.nombre;
@@ -66,12 +66,12 @@ function editarProducto(index) {
   };
 }
 
-// Reinicia la función original
+
 function agregarProducto() {
   btnAgregar.click();
 }
 
-// Función para borrar producto
+
 function borrarProducto(index) {
   if(confirm(`¿Deseas eliminar "${inventario[index].nombre}"?`)) {
     inventario.splice(index, 1);

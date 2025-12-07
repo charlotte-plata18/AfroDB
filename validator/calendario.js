@@ -6,7 +6,7 @@ const nextMonthBtn = document.getElementById('nextMonth');
 
 let currentDate = new Date();
 
-// Cargar citas desde localStorage
+
 const citas = JSON.parse(localStorage.getItem('citasProfesional')) || [];
 
 function renderCalendar() {

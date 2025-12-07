@@ -4,14 +4,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  background-color: #f6efe6; /* tono tierra muy suave */
+  background-color: #f6efe6; 
   color: #4b3a2f;
 }
 
 
 
 header {
-  background-color:rgb(209, 174, 143); /* beige tierra */
+  background-color:rgb(209, 174, 143); 
   padding: 30px 40px;
   display: flex;
   justify-content: space-between;

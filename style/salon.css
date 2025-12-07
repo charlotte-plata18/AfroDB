@@ -302,15 +302,14 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  background: #dba789;
   padding: 30px;
   border-radius: 12px;
   margin-bottom: 40px;
-  background-color: #f6f1ee;
+  background-color: #b69683;
 }
 
 .btn {
-  background: #c2a390;
+  background: #a57c63;
   color: rgb(251, 251, 251);
   border: none;
   padding: 10px 20px;
@@ -319,7 +318,7 @@ footer {
   font-weight: bold;
 } 
 .btn:hover {
-  background: #a18376;
+  background: #6a544a;
   transform: translateY(-2px);
   transition: transform 0.12s ease;
 }

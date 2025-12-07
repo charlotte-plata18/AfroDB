@@ -1,4 +1,4 @@
-/* --- Estilos generales --- */
+
 body {
   margin: 0;
   font-family: poppins, Arial, sans-serif;
@@ -59,7 +59,7 @@ header nav a:active {
   transition: 0.03s;
 }
 
-/* --- Overlay y Side Menu --- */
+
 .overlay {
   position: fixed;
   top: 0;
@@ -128,7 +128,7 @@ header nav a:active {
   transition: transform 0.12s ease;
 }
 
-/* --- Secciones --- */
+
 .section.hero h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
@@ -144,7 +144,7 @@ header nav a:active {
   font-size: 1.2rem;
 }
 
-/* --- Calendario --- */
+
 .calendar-container {
   max-width: 800px;
   margin: 30px auto;
@@ -212,7 +212,7 @@ header nav a:active {
   font-weight: bold;
 }
 
-/* --- Citas del día --- */
+
 #citasDia {
   margin-top: 20px;
   padding: 15px;
@@ -238,7 +238,7 @@ header nav a:active {
   border-bottom: 1px solid #ddd;
 }
 
-/* --- Footer --- */
+
 footer {
   background: rgb(209, 174, 143);
   color: #483a30;

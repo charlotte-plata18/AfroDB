@@ -10,7 +10,7 @@ userForm.addEventListener('submit', (e) => {
   const contacto = document.getElementById('contacto').value.trim();
   const tipo = document.getElementById('tipoUsuario').value;
 
-  // Validación del correo
+
   const dominiosValidos = ["gmail.com", "hotmail.com", "outlook.com", "yahoo.com"];
   const dominioCorreo = correo.split("@")[1];
 

@@ -1,9 +1,9 @@
-// --- PERFIL ---
+
 const editForm = document.getElementById('editForm');
 const fotoPerfilInput = document.getElementById('fotoPerfil');
 const fotoPerfilContainer = document.getElementById('fotoPerfilContainer');
 
-// Cargar datos guardados en localStorage
+
 function cargarPerfil() {
     const perfil = JSON.parse(localStorage.getItem('perfilProfesional')) || {};
     document.getElementById('nombre').value = perfil.nombre || '';
@@ -16,7 +16,7 @@ function cargarPerfil() {
 }
 cargarPerfil();
 
-// Función para mostrar foto de perfil con botón eliminar
+
 function mostrarFotoPerfil(src) {
     fotoPerfilContainer.innerHTML = `
         <div class="foto-card">
@@ -25,7 +25,7 @@ function mostrarFotoPerfil(src) {
         </div>
     `;
 
-    // Botón de eliminar
+   
     document.getElementById('eliminarFotoPerfil').addEventListener('click', () => {
         fotoPerfilContainer.innerHTML = '';
         const perfil = JSON.parse(localStorage.getItem('perfilProfesional')) || {};
@@ -34,7 +34,7 @@ function mostrarFotoPerfil(src) {
     });
 }
 
-// Guardar cambios de perfil
+
 editForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const nombre = document.getElementById('nombre').value.trim();
@@ -53,7 +53,7 @@ editForm.addEventListener('submit', (e) => {
 
     const perfil = { nombre, apellido, correo, contacto, cargo };
 
-    // Guardar foto de perfil si existe
+   
     const fotoImg = fotoPerfilContainer.querySelector('img');
     if (fotoImg) perfil.fotoPerfil = fotoImg.src;
 
@@ -61,7 +61,7 @@ editForm.addEventListener('submit', (e) => {
     alert("Perfil actualizado correctamente!");
 });
 
-// --- FOTO DE PERFIL ---
+
 fotoPerfilInput.addEventListener('change', (e) => {
     const file = e.target.files[0];
     if (!file) return;
@@ -73,7 +73,7 @@ fotoPerfilInput.addEventListener('change', (e) => {
     reader.readAsDataURL(file);
 });
 
-// --- CITAS ---
+
 const citas = JSON.parse(localStorage.getItem('citasProfesional')) || [];
 
 function mostrarCitas() {
@@ -95,7 +95,7 @@ function mostrarCitas() {
 }
 mostrarCitas();
 
-// --- GALERÍA DE TRABAJO ---
+
 const uploadInput = document.getElementById('uploadFotos');
 const galeria = document.getElementById('galeria');
 let fotosTrabajo = JSON.parse(localStorage.getItem('fotosTrabajo')) || [];
@@ -131,7 +131,7 @@ function eliminarFoto(index) {
     renderGaleria();
 }
 
-// --- COMENTARIOS ---
+
 const comentarios = JSON.parse(localStorage.getItem('comentariosProfesional')) || [];
 function mostrarComentarios() {
     const contenedor = document.getElementById('comentariosContainer');

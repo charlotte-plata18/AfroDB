@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color:rgb(209, 174, 143); /* beige tierra */
+  background-color:rgb(209, 174, 143); 
   padding: 30px 40px;
   display: flex;
   justify-content: space-between;

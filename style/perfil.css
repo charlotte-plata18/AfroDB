@@ -354,7 +354,6 @@ footer {
   width: auto;
 }
 
-/* Campo DESCRIPCIÓN */
 #descripcion {
     width: 100%;
     padding: 11px 15px;
@@ -364,8 +363,8 @@ footer {
     background: rgba(255, 255, 255, 0.60);
     outline: none;
     font-family: 'Poppins', sans-serif;
-    resize: none;       /* para que no cambie el tamaño */
-    min-height: 90px;   /* mismo estilo visual */
+    resize: none;     
+    min-height: 90px;   
     margin-bottom: 15px;
 }
 
