@@ -23,7 +23,7 @@ function renderTabla() {
     `;
     tabla.appendChild(row);
   });
-}
+} 
 
 
 btnAgregar.addEventListener('click', () => {
